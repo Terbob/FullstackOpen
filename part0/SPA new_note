@@ -1,1 +1,15 @@
+note over browser:
+JS code creates a new note,
+adds it to the note list,
+rerenders the list,
+and sends a POST request.
+end note
 
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over server:
+New note is received by Server in
+JSON format for integration.
+end note
+
+server-->browser: HTTP Status Code 201 Created
